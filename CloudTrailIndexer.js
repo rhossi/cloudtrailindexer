@@ -3,9 +3,9 @@ var zlib = require('zlib');
 var async = require('async');
 var http = require('http');
 
-var ELASTICSEARCH_URL = 'search-sample-hevp5ydex7g4ijfvs22olx2uqq.us-west-1.cloudsearch.amazonaws.com';
-var ELASTICSEARCH_PORT = 80;
-var ELASTICSEARCH_MAPPING_PATH = '/cloudtrail/record';
+var ELASTICSEARCH_URL = 'yourcloudsearchurl.com'; // your cloudesearch server url
+var ELASTICSEARCH_PORT = 80; // your cloudsearch server port
+var ELASTICSEARCH_MAPPING_PATH = '/cloudtrail/record'; // the mapping/record you are going to use
 
 var s3 = new aws.S3();
 
